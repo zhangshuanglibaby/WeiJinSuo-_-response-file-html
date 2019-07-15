@@ -1,0 +1,253 @@
+/* 引入字体图标文档 */
+@import './wjsfont.less';
+
+
+/* 这是头部部分 */
+.view {
+    background-color: #f9f9f9;
+
+    /* 这是头部开始部分 */
+    header {
+        text-align: center;
+        background-color: #fff;
+        line-height: 40px;
+        .text {
+            border-bottom: 1px solid #000;
+            border-right: 1px solid #000;
+            &:last-child {
+           border-right: 0;
+            }
+            a,
+            .glyphicon-phone,
+            .glyphicon-chevron-down,
+            .glyphicon-phone-alt {
+                color: #7f7f7f;
+            }
+            .phone {
+                position: relative;
+                &:hover {
+                    img {
+                        display: block;
+                    }
+                }
+                img {
+                    position: absolute;
+                    z-index: 10;
+                    top: 20px;
+                    left: -5px;
+                    display: none;
+                }
+            }
+            .free {
+                width: 80px;
+                height: 34px;
+                background-color: #ef4945;
+                border: 0;
+                color: #fff;
+                border-radius: 5px;
+                vertical-align: middle;
+                line-height: 34px;
+                &:hover {
+                    background-color: red;
+                }
+            }
+        }
+
+    }
+
+
+    /* 这是微金所导航开始部分 */
+    .navbar {
+        margin-bottom: 0;
+        .content {
+            .navbar-header {
+                margin-right: 15px;
+                a {
+                    .wjsfont-logo {
+                        color: #ff0000;
+                        font-size: 70px;
+                        padding: 5px;
+                    }
+                    .wjsfont-name {
+                        color: #767676; 
+                        font-size: 70px;
+                        padding: 5px;
+                    }
+                }
+            }
+            .navbar-collapse {
+                .navbar-nav {
+                    li {
+                        position: relative;
+                        display: block;
+                        a {
+                            height: 80px;
+                            padding: 0 15px;
+                            line-height: 80px;
+                            &:hover {
+                                border-bottom: 1px solid red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+ 
+    }
+
+
+    /* 这是支付交易保障开始部分 */
+    .pay {
+        padding-top: 70px;
+        .safe {
+            margin-bottom: 20px;
+            .wjsfont{
+                font-size: 35px;
+            }
+            a {
+                color: #7f7f7f;
+                &:hover {
+                    color: red;
+                }
+                span {
+                    float: left;
+                    margin-right: 10px;
+                }
+                .text {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    float: left;
+                    h3 {
+                        margin: 0;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* 这是排队等待开始部分 */
+    .wait {
+        padding: 30px 0;
+        margin-top: 30px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        .book {
+            padding: 0;
+            a {
+                color: red;
+                border-bottom: 1px dashed red;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .photo {
+            padding-left: 90px;
+        }
+    }
+
+
+    /* 这是新手体验开始部分 */
+
+    .tab-content {
+        .tab-pane {
+           .cards {
+               padding: 15px;
+               .cards-lf {
+                   float: left;
+                   width: 80%;
+                   padding: 0 10px;
+                   border: 3px solid #cccccc;
+                   border-right: 1px dashed #000;
+                  >a {
+                      display: block;
+                      width: 100%;
+                      color: #7f7f7f;
+                       h4 {
+                           margin: 0;
+                          padding: 30px 0 15px 100px;    
+                       }
+                       .lf-text {
+                           .lf-text-left {
+                               float: left;
+                           }
+                           .lf-text-right {
+                               float: right;
+                           }
+                       }
+                   }
+               }
+               .cards-rg {
+                   position: relative;
+                   float: right;
+                   color: red;
+                   width: 20%;
+                   border: 3px solid #cccccc;
+                   border-left: 0;
+                    &::before {
+                        position: absolute;
+                        top: -10px;
+                        left: -10px;
+                        content: '';
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        box-shadow: 0px 2px 0px #ccc;
+                    }
+                    &::after {
+                        position: absolute;
+                        bottom: -10px;
+                        left: -10px;
+                        content: '';
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        box-shadow: 0px -2px 0px #ccc;
+                    }
+                   a {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    margin: 67px 0;
+                    color: #767676;
+                   }
+               }
+           }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 767px) {
+        .carousel-inner {
+            .item {
+                a {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+} 

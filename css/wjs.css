@@ -1,0 +1,280 @@
+/* 引入字体图标文档 */
+/* 导入字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url('../font/MiFie-Web-Font.eot');
+  src: url('../font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'), url('../font/MiFie-Web-Font.woff') format('woff'), url('font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.svg') format('svg');
+}
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.wjsfont-logo::before {
+  content: '\e920';
+}
+.wjsfont-name::before {
+  content: '\e921';
+}
+.wjsfont-e903::before {
+  content: '\e903';
+}
+.wjsfont-e901::before {
+  content: '\e901';
+}
+.wjsfont-e904::before {
+  content: '\e904';
+}
+.wjsfont-e905::before {
+  content: '\e905';
+}
+.wjsfont-e902::before {
+  content: '\e902';
+}
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915';
+}
+.wjsfont-new01::before {
+  content: "\e90e";
+}
+.wjsfont-new02::before {
+  content: "\e90f";
+}
+.wjsfont-new03::before {
+  content: "\e910";
+}
+.wjsfont-new04::before {
+  content: "\e911";
+}
+/* 网页 最下方的 合作单位 */
+.wjsfont-partner01::before {
+  content: "\e946";
+}
+.wjsfont-partner02::before {
+  content: "\e92f";
+}
+.wjsfont-partner03::before {
+  content: "\e92e";
+}
+.wjsfont-partner04::before {
+  content: "\e92a";
+}
+.wjsfont-partner05::before {
+  content: "\e929";
+}
+.wjsfont-partner06::before {
+  content: "\e931";
+}
+.wjsfont-partner07::before {
+  content: "\e92c";
+}
+.wjsfont-partner08::before {
+  content: "\e92b";
+}
+.wjsfont-partner09::before {
+  content: "\e92d";
+}
+/* 这是头部部分 */
+.view {
+  background-color: #f9f9f9;
+  /* 这是头部开始部分 */
+  /* 这是微金所导航开始部分 */
+  /* 这是支付交易保障开始部分 */
+  /* 这是排队等待开始部分 */
+  /* 这是新手体验开始部分 */
+}
+.view header {
+  text-align: center;
+  background-color: #fff;
+  line-height: 40px;
+}
+.view header .text {
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.view header .text:last-child {
+  border-right: 0;
+}
+.view header .text a,
+.view header .text .glyphicon-phone,
+.view header .text .glyphicon-chevron-down,
+.view header .text .glyphicon-phone-alt {
+  color: #7f7f7f;
+}
+.view header .text .phone {
+  position: relative;
+}
+.view header .text .phone:hover img {
+  display: block;
+}
+.view header .text .phone img {
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  left: -5px;
+  display: none;
+}
+.view header .text .free {
+  width: 80px;
+  height: 34px;
+  background-color: #ef4945;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  vertical-align: middle;
+  line-height: 34px;
+}
+.view header .text .free:hover {
+  background-color: red;
+}
+.view .navbar {
+  margin-bottom: 0;
+}
+.view .navbar .content .navbar-header {
+  margin-right: 15px;
+}
+.view .navbar .content .navbar-header a .wjsfont-logo {
+  color: #ff0000;
+  font-size: 70px;
+  padding: 5px;
+}
+.view .navbar .content .navbar-header a .wjsfont-name {
+  color: #767676;
+  font-size: 70px;
+  padding: 5px;
+}
+.view .navbar .content .navbar-collapse .navbar-nav li {
+  position: relative;
+  display: block;
+}
+.view .navbar .content .navbar-collapse .navbar-nav li a {
+  height: 80px;
+  padding: 0 15px;
+  line-height: 80px;
+}
+.view .navbar .content .navbar-collapse .navbar-nav li a:hover {
+  border-bottom: 1px solid red;
+}
+.view .pay {
+  padding-top: 70px;
+}
+.view .pay .safe {
+  margin-bottom: 20px;
+}
+.view .pay .safe .wjsfont {
+  font-size: 35px;
+}
+.view .pay .safe a {
+  color: #7f7f7f;
+}
+.view .pay .safe a:hover {
+  color: red;
+}
+.view .pay .safe a span {
+  float: left;
+  margin-right: 10px;
+}
+.view .pay .safe a .text {
+  float: left;
+}
+.view .pay .safe a .text:hover {
+  text-decoration: underline;
+}
+.view .pay .safe a .text h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.view .wait {
+  padding: 30px 0;
+  margin-top: 30px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.view .wait .book {
+  padding: 0;
+}
+.view .wait .book a {
+  color: red;
+  border-bottom: 1px dashed red;
+}
+.view .wait .book a:hover {
+  text-decoration: underline;
+}
+.view .wait .photo {
+  padding-left: 90px;
+}
+.view .tab-content .tab-pane .cards {
+  padding: 15px;
+}
+.view .tab-content .tab-pane .cards .cards-lf {
+  float: left;
+  width: 80%;
+  padding: 0 10px;
+  border: 3px solid #cccccc;
+  border-right: 1px dashed #000;
+}
+.view .tab-content .tab-pane .cards .cards-lf > a {
+  display: block;
+  width: 100%;
+  color: #7f7f7f;
+}
+.view .tab-content .tab-pane .cards .cards-lf > a h4 {
+  margin: 0;
+  padding: 30px 0 15px 100px;
+}
+.view .tab-content .tab-pane .cards .cards-lf > a .lf-text .lf-text-left {
+  float: left;
+}
+.view .tab-content .tab-pane .cards .cards-lf > a .lf-text .lf-text-right {
+  float: right;
+}
+.view .tab-content .tab-pane .cards .cards-rg {
+  position: relative;
+  float: right;
+  color: red;
+  width: 20%;
+  border: 3px solid #cccccc;
+  border-left: 0;
+}
+.view .tab-content .tab-pane .cards .cards-rg::before {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 2px 0px #ccc;
+}
+.view .tab-content .tab-pane .cards .cards-rg::after {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px -2px 0px #ccc;
+}
+.view .tab-content .tab-pane .cards .cards-rg a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 67px 0;
+  color: #767676;
+}
+@media screen and (max-width: 767px) {
+  .view .carousel-inner .item a img {
+    width: 100%;
+  }
+}
